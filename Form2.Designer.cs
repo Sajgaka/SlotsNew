@@ -150,7 +150,6 @@
             this.Controls.Add(this.pictureBoxLeftSlot);
             this.Name = "SlotsForm";
             this.Text = "Slots";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SlotsForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeftSlot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMiddleSlot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRightSlot)).EndInit();

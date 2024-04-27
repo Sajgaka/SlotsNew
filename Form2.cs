@@ -108,14 +108,6 @@ namespace SlotsNew
             PictureBoxMenu.Visible = false;
         }
 
-        private void SlotsForm_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Space)
-            {
-                TimerLeftSlot.Stop();
-                TimerMiddleSlot.Stop();
-                TimerRightSlot.Stop();
-            }
-        }
+        
     }
 }
