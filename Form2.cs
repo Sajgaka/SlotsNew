@@ -17,64 +17,95 @@ namespace SlotsNew
             InitializeComponent();
         }
         private Random rnd = new Random();
+
+
         int intLeftImgNum = 0;
+        int randIntervalLeft = 0;
+        int counterLeft = 0;
         private void TimerLeftSlot_Tick(object sender, EventArgs e)
         {
             intLeftImgNum = rnd.Next(0, 4);
-            pictureBoxLeftSlot.Image = imageListLeftSlot.Images[intLeftImgNum];
-            if (intLeftImgNum == imageListLeftSlot.Images.Count - 1)
+            randIntervalLeft = rnd.Next(33, 133);
+
+            counterLeft++;
+            if (counterLeft > randIntervalLeft)
             {
-                intLeftImgNum = 0;
+                TimerLeftSlot.Stop();
             }
             else
             {
-                intLeftImgNum++;
+                pictureBoxLeftSlot.Image = imageListLeftSlot.Images[intLeftImgNum];
+                if (intLeftImgNum == imageListLeftSlot.Images.Count - 1)
+                {
+                    intLeftImgNum = 0;
+                }
+                else
+                {
+                    intLeftImgNum++;
+                }
             }
 
         }
 
         int intMiddleImgNum = 0;
+        int randIntervalMiddle = 0;
+        int counterMiddle = 0;
         private void TimerMiddleSlot_Tick(object sender, EventArgs e)
         {
             intMiddleImgNum = rnd.Next(0, 3);
+            randIntervalMiddle = rnd.Next(33, 133);
 
-            pictureBoxMiddleSlot.Image = imageListMiddleSlot.Images[intMiddleImgNum];
-            if (intMiddleImgNum == imageListMiddleSlot.Images.Count - 1)
+            counterMiddle++;
+            if (counterMiddle > randIntervalMiddle)
             {
-                intMiddleImgNum = 0;
+                TimerMiddleSlot.Stop();
             }
             else
             {
-                intMiddleImgNum++;
+                pictureBoxMiddleSlot.Image = imageListMiddleSlot.Images[intMiddleImgNum];
+                if (intMiddleImgNum == imageListMiddleSlot.Images.Count - 1)
+                {
+                    intMiddleImgNum = 0;
+                }
+                else
+                {
+                    intMiddleImgNum++;
+                }
             }
         }
 
         int intRightImgNum = 0;
+        int randIntervalRight = 0;
+        int counterRight = 0;
         private void TimerRightSlot_Tick(object sender, EventArgs e)
         {
             intRightImgNum = rnd.Next(0, 3);
+            randIntervalRight = rnd.Next(33, 133);
 
-            pictureBoxRightSlot.Image = imageListRightSlot.Images[intRightImgNum];
-            if (intRightImgNum == imageListRightSlot.Images.Count - 1)
+            counterRight++;
+            if (counterRight > randIntervalRight)
             {
-                intRightImgNum = 0;
+                TimerRightSlot.Stop();
             }
             else
             {
-                intRightImgNum++;
+
+                pictureBoxRightSlot.Image = imageListRightSlot.Images[intRightImgNum];
+                if (intRightImgNum == imageListRightSlot.Images.Count - 1)
+                {
+                    intRightImgNum = 0;
+                }
+                else
+                {
+                    intRightImgNum++;
+                }
             }
         }
-
-
 
         private void buttonMenu_Click(object sender, EventArgs e)
         {
             buttonMenu.Visible = false;
             PictureBoxMenu.Visible = false;
-            TimerLeftSlot.Start();
-            TimerMiddleSlot.Start();
-            TimerRightSlot.Start();
- 
         }
 
         private void SlotsForm_KeyDown(object sender, KeyEventArgs e)
@@ -83,7 +114,7 @@ namespace SlotsNew
             {
                 TimerLeftSlot.Stop();
                 TimerMiddleSlot.Stop();
-                TimerRightSlot.Stop
+                TimerRightSlot.Stop();
             }
         }
     }
