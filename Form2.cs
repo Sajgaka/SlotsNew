@@ -22,6 +22,7 @@ namespace SlotsNew
         int intLeftImgNum = 0;
         int randIntervalLeft = 0;
         int counterLeft = 0;
+        int finalLeftPicIndex = 0;
         private void TimerLeftSlot_Tick(object sender, EventArgs e)
         {
             intLeftImgNum = rnd.Next(0, 4);
@@ -31,6 +32,7 @@ namespace SlotsNew
             if (counterLeft > randIntervalLeft)
             {
                 TimerLeftSlot.Stop();
+                finalLeftPicIndex = intLeftImgNum;
             }
             else
             {
@@ -50,6 +52,7 @@ namespace SlotsNew
         int intMiddleImgNum = 0;
         int randIntervalMiddle = 0;
         int counterMiddle = 0;
+        int finalMiddlePicIndex = 0;
         private void TimerMiddleSlot_Tick(object sender, EventArgs e)
         {
             intMiddleImgNum = rnd.Next(0, 3);
@@ -59,6 +62,7 @@ namespace SlotsNew
             if (counterMiddle > randIntervalMiddle)
             {
                 TimerMiddleSlot.Stop();
+                finalMiddlePicIndex = intMiddleImgNum;
             }
             else
             {
@@ -77,6 +81,7 @@ namespace SlotsNew
         int intRightImgNum = 0;
         int randIntervalRight = 0;
         int counterRight = 0;
+        int finalRightPicIndex = 0;
         private void TimerRightSlot_Tick(object sender, EventArgs e)
         {
             intRightImgNum = rnd.Next(0, 3);
@@ -86,6 +91,7 @@ namespace SlotsNew
             if (counterRight > randIntervalRight)
             {
                 TimerRightSlot.Stop();
+                finalRightPicIndex = intRightImgNum;
             }
             else
             {
