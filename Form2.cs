@@ -110,8 +110,17 @@ namespace SlotsNew
 
         private void buttonMenu_Click(object sender, EventArgs e)
         {
-            buttonMenu.Visible = false;
+            buttonMenuPlay.Visible = false;
             PictureBoxMenu.Visible = false;
+
+            checkBoxGrusa.Visible = false; 
+            checkBoxVisna.Visible = false;  
+            checkBoxStar.Visible = false;   
+            checkBox7.Visible = false;
+            checkBoxKlub.Visible = false;   
+            checkBox1.Visible = false;
+            checkBox2.Visible = false;
+            checkBox3.Visible = false;
         }
 
         

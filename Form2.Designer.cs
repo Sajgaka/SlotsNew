@@ -40,7 +40,17 @@
             this.TimerMiddleSlot = new System.Windows.Forms.Timer(this.components);
             this.TimerRightSlot = new System.Windows.Forms.Timer(this.components);
             this.PictureBoxMenu = new System.Windows.Forms.PictureBox();
-            this.buttonMenu = new System.Windows.Forms.Button();
+            this.buttonMenuPlay = new System.Windows.Forms.Button();
+            this.checkBoxGrusa = new System.Windows.Forms.CheckBox();
+            this.checkBoxVisna = new System.Windows.Forms.CheckBox();
+            this.checkBoxStar = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBoxKlub = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.buttonQuestion = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeftSlot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMiddleSlot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRightSlot)).BeginInit();
@@ -119,7 +129,7 @@
             // 
             // PictureBoxMenu
             // 
-            this.PictureBoxMenu.BackgroundImage = global::SlotsNew.Properties.Resources.Menu;
+            this.PictureBoxMenu.BackgroundImage = global::SlotsNew.Properties.Resources.Menu2;
             this.PictureBoxMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBoxMenu.Location = new System.Drawing.Point(301, 106);
             this.PictureBoxMenu.Name = "PictureBoxMenu";
@@ -127,14 +137,109 @@
             this.PictureBoxMenu.TabIndex = 3;
             this.PictureBoxMenu.TabStop = false;
             // 
-            // buttonMenu
+            // buttonMenuPlay
             // 
-            this.buttonMenu.Location = new System.Drawing.Point(489, 417);
-            this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.Size = new System.Drawing.Size(75, 23);
-            this.buttonMenu.TabIndex = 4;
-            this.buttonMenu.UseVisualStyleBackColor = true;
-            this.buttonMenu.Click += new System.EventHandler(this.buttonMenu_Click);
+            this.buttonMenuPlay.BackgroundImage = global::SlotsNew.Properties.Resources.ButtonPlay22;
+            this.buttonMenuPlay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonMenuPlay.Location = new System.Drawing.Point(933, 566);
+            this.buttonMenuPlay.Name = "buttonMenuPlay";
+            this.buttonMenuPlay.Size = new System.Drawing.Size(100, 100);
+            this.buttonMenuPlay.TabIndex = 4;
+            this.buttonMenuPlay.Text = "Play ";
+            this.buttonMenuPlay.UseVisualStyleBackColor = true;
+            this.buttonMenuPlay.Click += new System.EventHandler(this.buttonMenu_Click);
+            // 
+            // checkBoxGrusa
+            // 
+            this.checkBoxGrusa.AutoSize = true;
+            this.checkBoxGrusa.Location = new System.Drawing.Point(484, 387);
+            this.checkBoxGrusa.Name = "checkBoxGrusa";
+            this.checkBoxGrusa.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxGrusa.TabIndex = 5;
+            this.checkBoxGrusa.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxVisna
+            // 
+            this.checkBoxVisna.AutoSize = true;
+            this.checkBoxVisna.Location = new System.Drawing.Point(580, 387);
+            this.checkBoxVisna.Name = "checkBoxVisna";
+            this.checkBoxVisna.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxVisna.TabIndex = 6;
+            this.checkBoxVisna.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxStar
+            // 
+            this.checkBoxStar.AutoSize = true;
+            this.checkBoxStar.Location = new System.Drawing.Point(686, 387);
+            this.checkBoxStar.Name = "checkBoxStar";
+            this.checkBoxStar.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxStar.TabIndex = 7;
+            this.checkBoxStar.UseVisualStyleBackColor = true;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.Location = new System.Drawing.Point(773, 387);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(15, 14);
+            this.checkBox7.TabIndex = 8;
+            this.checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxKlub
+            // 
+            this.checkBoxKlub.AutoSize = true;
+            this.checkBoxKlub.Location = new System.Drawing.Point(862, 387);
+            this.checkBoxKlub.Name = "checkBoxKlub";
+            this.checkBoxKlub.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxKlub.TabIndex = 9;
+            this.checkBoxKlub.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(887, 566);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1.TabIndex = 10;
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(686, 566);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(15, 14);
+            this.checkBox2.TabIndex = 11;
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(495, 566);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(15, 14);
+            this.checkBox3.TabIndex = 12;
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // buttonQuestion
+            // 
+            this.buttonQuestion.BackgroundImage = global::SlotsNew.Properties.Resources.Button_question;
+            this.buttonQuestion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonQuestion.Location = new System.Drawing.Point(1092, 26);
+            this.buttonQuestion.Name = "buttonQuestion";
+            this.buttonQuestion.Size = new System.Drawing.Size(80, 80);
+            this.buttonQuestion.TabIndex = 13;
+            this.buttonQuestion.UseVisualStyleBackColor = true;
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.BackgroundImage = global::SlotsNew.Properties.Resources.Exit;
+            this.buttonExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonExit.Location = new System.Drawing.Point(1187, 26);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(80, 80);
+            this.buttonExit.TabIndex = 14;
+            this.buttonExit.UseVisualStyleBackColor = true;
             // 
             // SlotsForm
             // 
@@ -143,7 +248,17 @@
             this.BackgroundImage = global::SlotsNew.Properties.Resources.Slots;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1274, 778);
-            this.Controls.Add(this.buttonMenu);
+            this.Controls.Add(this.buttonExit);
+            this.Controls.Add(this.buttonQuestion);
+            this.Controls.Add(this.checkBox3);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.checkBoxKlub);
+            this.Controls.Add(this.checkBox7);
+            this.Controls.Add(this.checkBoxStar);
+            this.Controls.Add(this.checkBoxVisna);
+            this.Controls.Add(this.checkBoxGrusa);
+            this.Controls.Add(this.buttonMenuPlay);
             this.Controls.Add(this.PictureBoxMenu);
             this.Controls.Add(this.pictureBoxRightSlot);
             this.Controls.Add(this.pictureBoxMiddleSlot);
@@ -155,6 +270,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRightSlot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxMenu)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -170,6 +286,16 @@
         private System.Windows.Forms.Timer TimerMiddleSlot;
         private System.Windows.Forms.Timer TimerRightSlot;
         private System.Windows.Forms.PictureBox PictureBoxMenu;
-        private System.Windows.Forms.Button buttonMenu;
+        private System.Windows.Forms.Button buttonMenuPlay;
+        private System.Windows.Forms.CheckBox checkBoxGrusa;
+        private System.Windows.Forms.CheckBox checkBoxVisna;
+        private System.Windows.Forms.CheckBox checkBoxStar;
+        private System.Windows.Forms.CheckBox checkBox7;
+        private System.Windows.Forms.CheckBox checkBoxKlub;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.Button buttonQuestion;
+        private System.Windows.Forms.Button buttonExit;
     }
 }
