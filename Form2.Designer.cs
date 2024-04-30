@@ -51,10 +51,13 @@
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.buttonQuestion = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
+            this.pictureboxRules = new System.Windows.Forms.PictureBox();
+            this.buttonRulesOff = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeftSlot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMiddleSlot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRightSlot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxMenu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRules)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBoxLeftSlot
@@ -230,6 +233,7 @@
             this.buttonQuestion.Size = new System.Drawing.Size(80, 80);
             this.buttonQuestion.TabIndex = 13;
             this.buttonQuestion.UseVisualStyleBackColor = true;
+            this.buttonQuestion.Click += new System.EventHandler(this.buttonQuestion_Click);
             // 
             // buttonExit
             // 
@@ -240,6 +244,30 @@
             this.buttonExit.Size = new System.Drawing.Size(80, 80);
             this.buttonExit.TabIndex = 14;
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
+            // pictureboxRules
+            // 
+            this.pictureboxRules.BackgroundImage = global::SlotsNew.Properties.Resources.Rules_for_casino_online;
+            this.pictureboxRules.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureboxRules.Location = new System.Drawing.Point(477, 163);
+            this.pictureboxRules.Name = "pictureboxRules";
+            this.pictureboxRules.Size = new System.Drawing.Size(450, 450);
+            this.pictureboxRules.TabIndex = 15;
+            this.pictureboxRules.TabStop = false;
+            this.pictureboxRules.Visible = false;
+            // 
+            // buttonRulesOff
+            // 
+            this.buttonRulesOff.AutoSize = true;
+            this.buttonRulesOff.Location = new System.Drawing.Point(810, 547);
+            this.buttonRulesOff.Name = "buttonRulesOff";
+            this.buttonRulesOff.Size = new System.Drawing.Size(75, 23);
+            this.buttonRulesOff.TabIndex = 16;
+            this.buttonRulesOff.Text = "OK";
+            this.buttonRulesOff.UseVisualStyleBackColor = true;
+            this.buttonRulesOff.Visible = false;
+            this.buttonRulesOff.Click += new System.EventHandler(this.buttonRulesOff_Click);
             // 
             // SlotsForm
             // 
@@ -248,6 +276,8 @@
             this.BackgroundImage = global::SlotsNew.Properties.Resources.Slots;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1274, 778);
+            this.Controls.Add(this.buttonRulesOff);
+            this.Controls.Add(this.pictureboxRules);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonQuestion);
             this.Controls.Add(this.checkBox3);
@@ -269,6 +299,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMiddleSlot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRightSlot)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxMenu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureboxRules)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,5 +328,7 @@
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Button buttonQuestion;
         private System.Windows.Forms.Button buttonExit;
+        private System.Windows.Forms.PictureBox pictureboxRules;
+        private System.Windows.Forms.Button buttonRulesOff;
     }
 }

@@ -163,6 +163,16 @@ namespace SlotsNew.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Rules_for_casino_online {
+            get {
+                object obj = ResourceManager.GetObject("Rules for casino online", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Slots {
             get {
                 object obj = ResourceManager.GetObject("Slots", resourceCulture);

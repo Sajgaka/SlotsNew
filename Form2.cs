@@ -123,6 +123,22 @@ namespace SlotsNew
             checkBox3.Visible = false;
         }
 
-        
+        private void buttonQuestion_Click(object sender, EventArgs e)
+        {
+            buttonRulesOff.Visible = true;
+            pictureboxRules.Visible = true;
+        }
+
+        private void buttonRulesOff_Click(object sender, EventArgs e)
+        {
+            buttonRulesOff.Visible = false;
+            pictureboxRules.Visible = false;
+
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
