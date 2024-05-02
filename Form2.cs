@@ -143,10 +143,12 @@ namespace SlotsNew
             Close();
         }
 
+        int checkBoxChoice = -1;
         private void checkBoxGrusa_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxGrusa.Checked == true)
             {
+                checkBoxChoice = 1;
                 checkBoxVisna.Visible = false;
                 checkBoxStar.Visible = false;
                 checkBoxKlub.Visible =false;
@@ -154,6 +156,7 @@ namespace SlotsNew
             }
             else if (checkBoxGrusa.Checked == false)
             {
+                checkBoxChoice = -1;
                 checkBoxVisna.Visible = true;
                 checkBoxStar.Visible = true;
                 checkBoxKlub.Visible = true;
@@ -166,6 +169,7 @@ namespace SlotsNew
         {
             if (checkBoxVisna.Checked == true)
             {
+                checkBoxChoice = 3;
                 checkBoxGrusa.Visible = false;
                 checkBoxStar.Visible = false;
                 checkBoxKlub.Visible = false;
@@ -173,6 +177,7 @@ namespace SlotsNew
             }
             else if (checkBoxVisna.Checked == false)
             {
+                checkBoxChoice = -1;
                 checkBoxGrusa.Visible = true;
                 checkBoxStar.Visible = true;
                 checkBoxKlub.Visible = true;
@@ -184,6 +189,7 @@ namespace SlotsNew
         {
             if (checkBoxStar.Checked == true)
             {
+                checkBoxChoice = 0;
                 checkBoxVisna.Visible = false;
                 checkBoxGrusa.Visible = false;
                 checkBoxKlub.Visible = false;
@@ -191,6 +197,7 @@ namespace SlotsNew
             }
             else if (checkBoxStar.Checked == false)
             {
+                checkBoxChoice = -1;
                 checkBoxVisna.Visible = true;
                 checkBoxGrusa.Visible = true;
                 checkBoxKlub.Visible = true;
@@ -202,6 +209,7 @@ namespace SlotsNew
         {
             if (checkBox7.Checked == true)
             {
+                checkBoxChoice = 4;
                 checkBoxVisna.Visible = false;
                 checkBoxGrusa.Visible = false;
                 checkBoxKlub.Visible = false;
@@ -209,6 +217,7 @@ namespace SlotsNew
             }
             else if (checkBox7.Checked == false)
             {
+                checkBoxChoice = -1;
                 checkBoxVisna.Visible = true;
                 checkBoxGrusa.Visible = true;
                 checkBoxKlub.Visible = true;
@@ -220,6 +229,7 @@ namespace SlotsNew
         {
             if (checkBoxKlub.Checked == true)
             {
+                checkBoxChoice = 2;
                 checkBoxVisna.Visible = false;
                 checkBoxGrusa.Visible = false;
                 checkBox7.Visible = false;
@@ -227,6 +237,7 @@ namespace SlotsNew
             }
             else if (checkBoxKlub.Checked == false)
             {
+                checkBoxChoice = -1;
                 checkBoxVisna.Visible = true;
                 checkBoxGrusa.Visible = true;
                 checkBox7.Visible = true;
@@ -234,15 +245,18 @@ namespace SlotsNew
             }
         }
 
+        int checkBoxCountChoice = 0;
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox3.Checked == true)
             {
+                checkBoxCountChoice = 3;
                 checkBox2.Visible = false;
                 checkBox1.Visible = false;
             }
             else if (checkBox3.Checked == false)
             {
+                checkBoxCountChoice = 0;
                 checkBox2.Visible = true;
                 checkBox1.Visible = true;
             }
@@ -253,11 +267,13 @@ namespace SlotsNew
         {
             if (checkBox2.Checked == true)
             {
+                checkBoxCountChoice = 2;
                 checkBox3.Visible = false;
                 checkBox1.Visible = false;
             }
             else if (checkBox2.Checked == false)
             {
+                checkBoxCountChoice = 0;
                 checkBox3.Visible = true;
                 checkBox1.Visible = true;
             }
@@ -267,13 +283,71 @@ namespace SlotsNew
         {
             if (checkBox1.Checked == true)
             {
+                checkBoxCountChoice = 1;
                 checkBox2.Visible = false;
                 checkBox3.Visible = false;
             }
             else if (checkBox1.Checked == false)
             {
+                checkBoxCountChoice = 0;
                 checkBox2.Visible = true;
                 checkBox3.Visible = true;
+            }
+        }
+
+        private void CalculateChoice()
+        {
+            switch (checkBoxCountChoice)
+            {
+                case 1:
+                    if ((checkBoxChoice == finalLeftPicIndex) && (checkBoxChoice != finalMiddlePicIndex) && (checkBoxChoice != finalRightPicIndex))
+                    {
+                        //WIN
+                    }
+                    else if ((checkBoxChoice != finalLeftPicIndex) && (checkBoxChoice == finalMiddlePicIndex) && (checkBoxChoice != finalRightPicIndex))
+                    {
+                        //WIN
+                    }
+                    else if ((checkBoxChoice != finalLeftPicIndex) && (checkBoxChoice != finalMiddlePicIndex) && (checkBoxChoice == finalRightPicIndex))
+                    {
+                        //WIN
+                    }
+                    else
+                    {
+                        //LOOSE
+                    }
+                    break;
+                case 2:
+                    if ((checkBoxChoice == finalLeftPicIndex) && (checkBoxChoice == finalMiddlePicIndex) && (checkBoxChoice != finalRightPicIndex))
+                    {
+                        //WIN
+                    }
+                    else if ((checkBoxChoice != finalLeftPicIndex) && (checkBoxChoice == finalMiddlePicIndex) && (checkBoxChoice == finalRightPicIndex))
+                    {
+                        //WIN
+                    }
+                    else if ((checkBoxChoice == finalLeftPicIndex) && (checkBoxChoice != finalMiddlePicIndex) && (checkBoxChoice == finalRightPicIndex))
+                    {
+                        //WIN
+                    }
+                    else
+                    {
+                        //LOOSE
+                    }
+                    break;
+                case 3:
+                    if ((checkBoxChoice == finalLeftPicIndex) && (checkBoxChoice == finalMiddlePicIndex) && (checkBoxChoice == finalRightPicIndex))
+                    {
+                        //WIN
+                    }
+                    else
+                    {
+                        //LOOSE
+                    }
+                    break;
+
+                case 0:
+                    break;
             }
         }
     }

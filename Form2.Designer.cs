@@ -99,21 +99,21 @@
             // 
             this.imageListMiddleSlot.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListMiddleSlot.ImageStream")));
             this.imageListMiddleSlot.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageListMiddleSlot.Images.SetKeyName(0, "7.jpg");
+            this.imageListMiddleSlot.Images.SetKeyName(0, "Star.jpg");
             this.imageListMiddleSlot.Images.SetKeyName(1, "Grus.jpg");
-            this.imageListMiddleSlot.Images.SetKeyName(2, "Star.jpg");
-            this.imageListMiddleSlot.Images.SetKeyName(3, "Straw.jpg");
-            this.imageListMiddleSlot.Images.SetKeyName(4, "Vis.jpg");
+            this.imageListMiddleSlot.Images.SetKeyName(2, "Straw.jpg");
+            this.imageListMiddleSlot.Images.SetKeyName(3, "Vis.jpg");
+            this.imageListMiddleSlot.Images.SetKeyName(4, "7.jpg");
             // 
             // imageListRightSlot
             // 
             this.imageListRightSlot.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListRightSlot.ImageStream")));
             this.imageListRightSlot.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageListRightSlot.Images.SetKeyName(0, "Vis.jpg");
-            this.imageListRightSlot.Images.SetKeyName(1, "7.jpg");
-            this.imageListRightSlot.Images.SetKeyName(2, "Grus.jpg");
-            this.imageListRightSlot.Images.SetKeyName(3, "Straw.jpg");
-            this.imageListRightSlot.Images.SetKeyName(4, "Star.jpg");
+            this.imageListRightSlot.Images.SetKeyName(0, "Star.jpg");
+            this.imageListRightSlot.Images.SetKeyName(1, "Grus.jpg");
+            this.imageListRightSlot.Images.SetKeyName(2, "Straw.jpg");
+            this.imageListRightSlot.Images.SetKeyName(3, "Vis.jpg");
+            this.imageListRightSlot.Images.SetKeyName(4, "7.jpg");
             // 
             // TimerLeftSlot
             // 
@@ -258,7 +258,7 @@
             // 
             this.pictureboxRules.BackgroundImage = global::SlotsNew.Properties.Resources.Rules_for_casino_online;
             this.pictureboxRules.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureboxRules.Location = new System.Drawing.Point(-118, 340);
+            this.pictureboxRules.Location = new System.Drawing.Point(-66, 316);
             this.pictureboxRules.Name = "pictureboxRules";
             this.pictureboxRules.Size = new System.Drawing.Size(450, 450);
             this.pictureboxRules.TabIndex = 15;
