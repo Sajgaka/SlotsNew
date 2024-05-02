@@ -26,7 +26,7 @@ namespace SlotsNew
         private void TimerLeftSlot_Tick(object sender, EventArgs e)
         {
             intLeftImgNum = rnd.Next(0, 4);
-            randIntervalLeft = rnd.Next(33, 133);
+            randIntervalLeft = rnd.Next(60, 133);
 
             counterLeft++;
             if (counterLeft > randIntervalLeft)
@@ -56,7 +56,7 @@ namespace SlotsNew
         private void TimerMiddleSlot_Tick(object sender, EventArgs e)
         {
             intMiddleImgNum = rnd.Next(0, 3);
-            randIntervalMiddle = rnd.Next(33, 133);
+            randIntervalMiddle = rnd.Next(60, 133);
 
             counterMiddle++;
             if (counterMiddle > randIntervalMiddle)
@@ -85,7 +85,7 @@ namespace SlotsNew
         private void TimerRightSlot_Tick(object sender, EventArgs e)
         {
             intRightImgNum = rnd.Next(0, 3);
-            randIntervalRight = rnd.Next(33, 133);
+            randIntervalRight = rnd.Next(60, 133);
 
             counterRight++;
             if (counterRight > randIntervalRight)
@@ -121,6 +121,8 @@ namespace SlotsNew
             checkBox1.Visible = false;
             checkBox2.Visible = false;
             checkBox3.Visible = false;
+            pictureboxRules.Visible = false;
+            buttonRulesOff.Visible = false;
         }
 
         private void buttonQuestion_Click(object sender, EventArgs e)
@@ -139,6 +141,140 @@ namespace SlotsNew
         private void buttonExit_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void checkBoxGrusa_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxGrusa.Checked == true)
+            {
+                checkBoxVisna.Visible = false;
+                checkBoxStar.Visible = false;
+                checkBoxKlub.Visible =false;
+                checkBox7.Visible = false;
+            }
+            else if (checkBoxGrusa.Checked == false)
+            {
+                checkBoxVisna.Visible = true;
+                checkBoxStar.Visible = true;
+                checkBoxKlub.Visible = true;
+                checkBox7.Visible = true;
+            }
+            
+        }
+
+        private void checkBoxVisna_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxVisna.Checked == true)
+            {
+                checkBoxGrusa.Visible = false;
+                checkBoxStar.Visible = false;
+                checkBoxKlub.Visible = false;
+                checkBox7.Visible = false;
+            }
+            else if (checkBoxVisna.Checked == false)
+            {
+                checkBoxGrusa.Visible = true;
+                checkBoxStar.Visible = true;
+                checkBoxKlub.Visible = true;
+                checkBox7.Visible = true;
+            }
+        }
+
+        private void checkBoxStar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxStar.Checked == true)
+            {
+                checkBoxVisna.Visible = false;
+                checkBoxGrusa.Visible = false;
+                checkBoxKlub.Visible = false;
+                checkBox7.Visible = false;
+            }
+            else if (checkBoxStar.Checked == false)
+            {
+                checkBoxVisna.Visible = true;
+                checkBoxGrusa.Visible = true;
+                checkBoxKlub.Visible = true;
+                checkBox7.Visible = true;
+            }
+        }
+
+        private void checkBox7_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox7.Checked == true)
+            {
+                checkBoxVisna.Visible = false;
+                checkBoxGrusa.Visible = false;
+                checkBoxKlub.Visible = false;
+                checkBoxStar.Visible = false;
+            }
+            else if (checkBox7.Checked == false)
+            {
+                checkBoxVisna.Visible = true;
+                checkBoxGrusa.Visible = true;
+                checkBoxKlub.Visible = true;
+                checkBoxStar.Visible = true;
+            }
+        }
+
+        private void checkBoxKlub_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxKlub.Checked == true)
+            {
+                checkBoxVisna.Visible = false;
+                checkBoxGrusa.Visible = false;
+                checkBox7.Visible = false;
+                checkBoxStar.Visible = false;
+            }
+            else if (checkBoxKlub.Checked == false)
+            {
+                checkBoxVisna.Visible = true;
+                checkBoxGrusa.Visible = true;
+                checkBox7.Visible = true;
+                checkBoxStar.Visible = true;
+            }
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox3.Checked == true)
+            {
+                checkBox2.Visible = false;
+                checkBox1.Visible = false;
+            }
+            else if (checkBox3.Checked == false)
+            {
+                checkBox2.Visible = true;
+                checkBox1.Visible = true;
+            }
+                
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked == true)
+            {
+                checkBox3.Visible = false;
+                checkBox1.Visible = false;
+            }
+            else if (checkBox2.Checked == false)
+            {
+                checkBox3.Visible = true;
+                checkBox1.Visible = true;
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                checkBox2.Visible = false;
+                checkBox3.Visible = false;
+            }
+            else if (checkBox1.Checked == false)
+            {
+                checkBox2.Visible = true;
+                checkBox3.Visible = true;
+            }
         }
     }
 }

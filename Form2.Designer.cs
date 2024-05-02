@@ -160,6 +160,7 @@
             this.checkBoxGrusa.Size = new System.Drawing.Size(15, 14);
             this.checkBoxGrusa.TabIndex = 5;
             this.checkBoxGrusa.UseVisualStyleBackColor = true;
+            this.checkBoxGrusa.CheckedChanged += new System.EventHandler(this.checkBoxGrusa_CheckedChanged);
             // 
             // checkBoxVisna
             // 
@@ -169,6 +170,7 @@
             this.checkBoxVisna.Size = new System.Drawing.Size(15, 14);
             this.checkBoxVisna.TabIndex = 6;
             this.checkBoxVisna.UseVisualStyleBackColor = true;
+            this.checkBoxVisna.CheckedChanged += new System.EventHandler(this.checkBoxVisna_CheckedChanged);
             // 
             // checkBoxStar
             // 
@@ -178,6 +180,7 @@
             this.checkBoxStar.Size = new System.Drawing.Size(15, 14);
             this.checkBoxStar.TabIndex = 7;
             this.checkBoxStar.UseVisualStyleBackColor = true;
+            this.checkBoxStar.CheckedChanged += new System.EventHandler(this.checkBoxStar_CheckedChanged);
             // 
             // checkBox7
             // 
@@ -187,6 +190,7 @@
             this.checkBox7.Size = new System.Drawing.Size(15, 14);
             this.checkBox7.TabIndex = 8;
             this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox7.CheckedChanged += new System.EventHandler(this.checkBox7_CheckedChanged);
             // 
             // checkBoxKlub
             // 
@@ -196,6 +200,7 @@
             this.checkBoxKlub.Size = new System.Drawing.Size(15, 14);
             this.checkBoxKlub.TabIndex = 9;
             this.checkBoxKlub.UseVisualStyleBackColor = true;
+            this.checkBoxKlub.CheckedChanged += new System.EventHandler(this.checkBoxKlub_CheckedChanged);
             // 
             // checkBox1
             // 
@@ -205,6 +210,7 @@
             this.checkBox1.Size = new System.Drawing.Size(15, 14);
             this.checkBox1.TabIndex = 10;
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -214,6 +220,7 @@
             this.checkBox2.Size = new System.Drawing.Size(15, 14);
             this.checkBox2.TabIndex = 11;
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -223,6 +230,7 @@
             this.checkBox3.Size = new System.Drawing.Size(15, 14);
             this.checkBox3.TabIndex = 12;
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // buttonQuestion
             // 
@@ -250,7 +258,7 @@
             // 
             this.pictureboxRules.BackgroundImage = global::SlotsNew.Properties.Resources.Rules_for_casino_online;
             this.pictureboxRules.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureboxRules.Location = new System.Drawing.Point(477, 163);
+            this.pictureboxRules.Location = new System.Drawing.Point(-118, 340);
             this.pictureboxRules.Name = "pictureboxRules";
             this.pictureboxRules.Size = new System.Drawing.Size(450, 450);
             this.pictureboxRules.TabIndex = 15;
