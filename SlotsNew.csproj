@@ -134,5 +134,11 @@
   <ItemGroup>
     <None Include="Resources\Rules for casino online.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ButtonPlayAgain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayAgain2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

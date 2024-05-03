@@ -53,6 +53,11 @@
             this.buttonExit = new System.Windows.Forms.Button();
             this.pictureboxRules = new System.Windows.Forms.PictureBox();
             this.buttonRulesOff = new System.Windows.Forms.Button();
+            this.timerSystemTime = new System.Windows.Forms.Timer(this.components);
+            this.Balance = new System.Windows.Forms.Label();
+            this.labelText = new System.Windows.Forms.Label();
+            this.buttonPlayAgain = new System.Windows.Forms.Button();
+            this.labelPlus = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeftSlot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMiddleSlot)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRightSlot)).BeginInit();
@@ -277,6 +282,58 @@
             this.buttonRulesOff.Visible = false;
             this.buttonRulesOff.Click += new System.EventHandler(this.buttonRulesOff_Click);
             // 
+            // timerSystemTime
+            // 
+            this.timerSystemTime.Enabled = true;
+            this.timerSystemTime.Interval = 124;
+            this.timerSystemTime.Tick += new System.EventHandler(this.timerSystemTime_Tick);
+            // 
+            // Balance
+            // 
+            this.Balance.AutoSize = true;
+            this.Balance.Font = new System.Drawing.Font("Bookman Old Style", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Balance.ForeColor = System.Drawing.Color.Black;
+            this.Balance.Location = new System.Drawing.Point(572, 59);
+            this.Balance.Name = "Balance";
+            this.Balance.Size = new System.Drawing.Size(171, 41);
+            this.Balance.TabIndex = 17;
+            this.Balance.Text = "Balance:";
+            // 
+            // labelText
+            // 
+            this.labelText.AutoSize = true;
+            this.labelText.Font = new System.Drawing.Font("Bookman Old Style", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelText.ForeColor = System.Drawing.Color.Black;
+            this.labelText.Location = new System.Drawing.Point(791, 59);
+            this.labelText.Name = "labelText";
+            this.labelText.Size = new System.Drawing.Size(64, 41);
+            this.labelText.TabIndex = 18;
+            this.labelText.Text = "00";
+            // 
+            // buttonPlayAgain
+            // 
+            this.buttonPlayAgain.BackgroundImage = global::SlotsNew.Properties.Resources.PlayAgain2;
+            this.buttonPlayAgain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonPlayAgain.Location = new System.Drawing.Point(977, 557);
+            this.buttonPlayAgain.Name = "buttonPlayAgain";
+            this.buttonPlayAgain.Size = new System.Drawing.Size(100, 100);
+            this.buttonPlayAgain.TabIndex = 19;
+            this.buttonPlayAgain.UseVisualStyleBackColor = true;
+            this.buttonPlayAgain.Visible = false;
+            this.buttonPlayAgain.Click += new System.EventHandler(this.buttonPlayAgain_Click);
+            // 
+            // labelPlus
+            // 
+            this.labelPlus.AutoSize = true;
+            this.labelPlus.Font = new System.Drawing.Font("Bookman Old Style", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPlus.ForeColor = System.Drawing.Color.Black;
+            this.labelPlus.Location = new System.Drawing.Point(744, 59);
+            this.labelPlus.Name = "labelPlus";
+            this.labelPlus.Size = new System.Drawing.Size(41, 41);
+            this.labelPlus.TabIndex = 20;
+            this.labelPlus.Text = "0";
+            this.labelPlus.Visible = false;
+            // 
             // SlotsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,6 +341,10 @@
             this.BackgroundImage = global::SlotsNew.Properties.Resources.Slots;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1274, 778);
+            this.Controls.Add(this.labelPlus);
+            this.Controls.Add(this.buttonPlayAgain);
+            this.Controls.Add(this.labelText);
+            this.Controls.Add(this.Balance);
             this.Controls.Add(this.buttonRulesOff);
             this.Controls.Add(this.pictureboxRules);
             this.Controls.Add(this.buttonExit);
@@ -338,5 +399,10 @@
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.PictureBox pictureboxRules;
         private System.Windows.Forms.Button buttonRulesOff;
+        private System.Windows.Forms.Timer timerSystemTime;
+        private System.Windows.Forms.Label Balance;
+        private System.Windows.Forms.Label labelText;
+        private System.Windows.Forms.Button buttonPlayAgain;
+        private System.Windows.Forms.Label labelPlus;
     }
 }

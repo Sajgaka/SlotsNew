@@ -25,8 +25,8 @@ namespace SlotsNew
         int finalLeftPicIndex = 0;
         private void TimerLeftSlot_Tick(object sender, EventArgs e)
         {
-            intLeftImgNum = rnd.Next(0, 4);
-            randIntervalLeft = rnd.Next(60, 133);
+            intLeftImgNum = rnd.Next(0, 5);
+            randIntervalLeft = rnd.Next(60, 123);
 
             counterLeft++;
             if (counterLeft > randIntervalLeft)
@@ -55,8 +55,8 @@ namespace SlotsNew
         int finalMiddlePicIndex = 0;
         private void TimerMiddleSlot_Tick(object sender, EventArgs e)
         {
-            intMiddleImgNum = rnd.Next(0, 3);
-            randIntervalMiddle = rnd.Next(60, 133);
+            intMiddleImgNum = rnd.Next(0, 5);
+            randIntervalMiddle = rnd.Next(60, 123);
 
             counterMiddle++;
             if (counterMiddle > randIntervalMiddle)
@@ -84,8 +84,8 @@ namespace SlotsNew
         int finalRightPicIndex = 0;
         private void TimerRightSlot_Tick(object sender, EventArgs e)
         {
-            intRightImgNum = rnd.Next(0, 3);
-            randIntervalRight = rnd.Next(60, 133);
+            intRightImgNum = rnd.Next(0, 1);
+            randIntervalRight = rnd.Next(60, 123);
 
             counterRight++;
             if (counterRight > randIntervalRight)
@@ -107,6 +107,18 @@ namespace SlotsNew
                 }
             }
         }
+        int SystemTime = 0;
+        private void timerSystemTime_Tick(object sender, EventArgs e)
+        {
+            SystemTime  ++;
+             if (SystemTime > 124)
+            {
+                buttonPlayAgain.Visible = true;
+                CalculateChoice();
+                timerSystemTime.Stop();
+            }
+             
+        }
 
         private void buttonMenu_Click(object sender, EventArgs e)
         {
@@ -123,6 +135,10 @@ namespace SlotsNew
             checkBox3.Visible = false;
             pictureboxRules.Visible = false;
             buttonRulesOff.Visible = false;
+            TimerLeftSlot.Start();
+            TimerRightSlot.Start();
+            TimerMiddleSlot.Start();
+            timerSystemTime.Start();
         }
 
         private void buttonQuestion_Click(object sender, EventArgs e)
@@ -302,14 +318,17 @@ namespace SlotsNew
                 case 1:
                     if ((checkBoxChoice == finalLeftPicIndex) && (checkBoxChoice != finalMiddlePicIndex) && (checkBoxChoice != finalRightPicIndex))
                     {
+                        labelText.Text = "100";
                         //WIN
                     }
                     else if ((checkBoxChoice != finalLeftPicIndex) && (checkBoxChoice == finalMiddlePicIndex) && (checkBoxChoice != finalRightPicIndex))
                     {
+                        labelText.Text = "100";
                         //WIN
                     }
                     else if ((checkBoxChoice != finalLeftPicIndex) && (checkBoxChoice != finalMiddlePicIndex) && (checkBoxChoice == finalRightPicIndex))
                     {
+                        labelText.Text = "100";
                         //WIN
                     }
                     else
@@ -349,6 +368,25 @@ namespace SlotsNew
                 case 0:
                     break;
             }
+        }
+
+        private void buttonPlayAgain_Click(object sender, EventArgs e)
+        {
+            
+
+            buttonMenuPlay.Visible = true;
+            PictureBoxMenu.Visible = true;
+
+            checkBoxGrusa.Visible = true;
+            checkBoxVisna.Visible = true;
+            checkBoxStar.Visible = true;
+            checkBox7.Visible = true;
+            checkBoxKlub.Visible = true;
+            checkBox1.Visible = true;
+            checkBox2.Visible = true;
+            checkBox3.Visible = true;
+
+            buttonPlayAgain.Visible = false;
         }
     }
 }

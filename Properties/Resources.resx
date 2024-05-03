@@ -136,6 +136,9 @@
   <data name="Slots" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Slots.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Rules for casino online" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rules for casino online.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Vis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vis1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -154,13 +157,16 @@
   <data name="Star" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Star1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ButtonPlayAgain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonPlayAgain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Menu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ButtonPlay22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ButtonPlay22.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Rules for casino online" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rules for casino online.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PlayAgain2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PlayAgain2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
