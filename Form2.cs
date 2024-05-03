@@ -113,9 +113,9 @@ namespace SlotsNew
             SystemTime  ++;
              if (SystemTime > 124)
             {
+                timerSystemTime.Stop();
                 buttonPlayAgain.Visible = true;
                 CalculateChoice();
-                timerSystemTime.Stop();
             }
              
         }
@@ -334,39 +334,54 @@ namespace SlotsNew
                     else
                     {
                         //LOOSE
+                        labelText.Text = "You loose";
                     }
                     break;
                 case 2:
                     if ((checkBoxChoice == finalLeftPicIndex) && (checkBoxChoice == finalMiddlePicIndex) && (checkBoxChoice != finalRightPicIndex))
                     {
                         //WIN
+                        labelText.Text = "200";
                     }
                     else if ((checkBoxChoice != finalLeftPicIndex) && (checkBoxChoice == finalMiddlePicIndex) && (checkBoxChoice == finalRightPicIndex))
                     {
                         //WIN
+                        labelText.Text = "200";
                     }
                     else if ((checkBoxChoice == finalLeftPicIndex) && (checkBoxChoice != finalMiddlePicIndex) && (checkBoxChoice == finalRightPicIndex))
                     {
                         //WIN
+                        labelText.Text = "200";
                     }
                     else
                     {
                         //LOOSE
+                        labelText.Text = "You loose";
                     }
                     break;
                 case 3:
                     if ((checkBoxChoice == finalLeftPicIndex) && (checkBoxChoice == finalMiddlePicIndex) && (checkBoxChoice == finalRightPicIndex))
                     {
                         //WIN
+                        labelText.Text = "300";
                     }
                     else
                     {
                         //LOOSE
+                        labelText.Text = "You loose";
                     }
                     break;
 
                 case 0:
                     break;
+            }
+
+            foreach (Control contr in Controls)
+            {
+                if (contr is CheckBox chk) 
+                {
+                    chk.Checked = false;
+                }
             }
         }
 
